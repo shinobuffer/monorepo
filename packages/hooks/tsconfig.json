@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "es2015",
+    "lib": ["DOM", "ESNext"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "react",
+    "rootDir": "./src",
+    "baseUrl": "./",
+    "paths": {},
+    "noUncheckedSideEffectImports": true,
+    "resolveJsonModule": true,
+
+    "declaration": true,
+    "declarationDir": "./lib",
+    "importHelpers": true,
+
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules", "./lib", "./esm", "./cjs"]
+}
