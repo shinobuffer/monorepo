@@ -1,0 +1,35 @@
+{
+  "name": "@shinobu/hooks",
+  "version": "1.0.0",
+  "description": "WIP",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "pnpm build -w --environment __DEV__"
+  },
+  "keywords": [],
+  "author": "shinobuffer",
+  "license": "MIT",
+  "main": "./cjs/index.cjs",
+  "module": "./esm/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./cjs/index.cjs",
+      "import": "./esm/index.mjs"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./lib/*"
+      ]
+    }
+  },
+  "dependencies": {
+    "@swc/helpers": "^0.5.17",
+    "es-toolkit": "^1.39.8"
+  },
+  "peerDependencies": {
+    "react": "^18.x || ^19.x"
+  }
+}
